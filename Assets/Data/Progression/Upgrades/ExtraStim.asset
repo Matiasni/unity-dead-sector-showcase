@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae25d7c5bd7200943a6f8e662b96675c, type: 3}
+  m_Name: ExtraStim
+  m_EditorClassIdentifier: Assembly-CSharp::ResourceCapacityUpgrade
+  upgradeName: Extra Stim
+  description: +1 stim charge.
+  category: 3
+  maxStacks: 2
+  resource: {fileID: 11400000, guid: d5cc9b9ac2dc9354795a11695ef888a7, type: 2}
+  amount: 1
