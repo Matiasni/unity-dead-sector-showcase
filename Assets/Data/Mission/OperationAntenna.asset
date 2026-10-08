@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce410e0de8ac7d64b8ff2fe0985c1622, type: 3}
+  m_Name: OperationAntenna
+  m_EditorClassIdentifier: Assembly-CSharp::MissionDefinition
+  missionName: Operation Antenna
+  reinforcements: 3
+  xpResource: {fileID: 11400000, guid: bc9777cf7e1de764b80fb5ceab9e3665, type: 2}
+  scrapResource: {fileID: 11400000, guid: 484227730f16f1f46b316fc1ac904bbc, type: 2}
+  extractionBonusXp: 150
+  xpPerScrap: 1
