@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b453494021e7c147b89a4758814e3c7, type: 3}
+  m_Name: Shotgun
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponSettings
+  weaponName: Shotgun
+  description: 'Close range, huge damage per shot.
+
+    Strong vs Charger and Melee
+    up close.
+
+    Useless beyond ~8 m.'
+  viewPrefab: {fileID: 5691950817691660771, guid: ea638d569ad0add42950eca93301420d, type: 3}
+  fireMode: 1
+  fireRate: 1.7
+  shotPattern: {fileID: 11400000, guid: eafb38a1b98982747bb880b50355cde8, type: 2}
+  ammoType: {fileID: 11400000, guid: 673039023255a664fb095dc67d159ae3, type: 2}
+  ammoPerShot: 1
+  magazineSize: 6
+  reloadTime: 1.5
+  projectilePrefab: {fileID: 4171255174875198597, guid: 3a6b8cf7027a9fe41bb29d9f8c0d712a, type: 3}
+  projectileSpeed: 30
+  projectileLifeTime: 0.35
+  damage: 7
+  pierceCount: 0
+  fireSound: {fileID: 11400000, guid: 09dea9cf7bc01c24aa5bbd3d5aa19618, type: 2}
+  fireShake: 0.2
