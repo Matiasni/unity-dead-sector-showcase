@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f741906c2d99b54fbaea2dd058e8584, type: 3}
+  m_Name: Grenade
+  m_EditorClassIdentifier: Assembly-CSharp::GrenadeAbilityDefinition
+  abilityName: Grenade
+  description: 'Sticky grenade, big delayed damage.
+
+    Stick it to a Charger or
+    a group.'
+  uiColor: {r: 0.5, g: 0.6, b: 0.2, a: 1}
+  cooldown: 1
+  costResource: {fileID: 11400000, guid: 0146341386861204b90993c086133dfe, type: 2}
+  costAmount: 1
+  grenade: {fileID: 11400000, guid: f80da99d355554549849329bf1aeb886, type: 2}
+  maxThrowDistance: 14
+  flightTime: 0.8

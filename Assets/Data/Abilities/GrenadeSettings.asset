@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d7d6d04ea76bab418a2d749802d3529, type: 3}
+  m_Name: GrenadeSettings
+  m_EditorClassIdentifier: Assembly-CSharp::GrenadeSettings
+  grenadePrefab: {fileID: 884296162670270973, guid: 127e7859e4ae8dc4aa4a39af77762dde, type: 3}
+  explosionPrefab: {fileID: 1373677768488161943, guid: 89ece911a133a5e42a7ff8e4200a204b, type: 3}
+  sticky: 1
+  detonationDelay: 1.5
+  maxFlightTime: 4
+  explosionRadius: 4
+  damage: 60
+  damageMask:
+    serializedVersion: 2
+    m_Bits: 5120
+  explosionSound: {fileID: 11400000, guid: 141c98e6956333042a6cbfa147f7163e, type: 2}
+  explosionShake: 0.45
