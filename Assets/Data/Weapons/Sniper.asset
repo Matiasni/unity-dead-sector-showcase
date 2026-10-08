@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b453494021e7c147b89a4758814e3c7, type: 3}
+  m_Name: Sniper
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponSettings
+  weaponName: Sniper
+  description: 'Few shots, heavy damage, pierces.
+
+    Strong vs ranged Tiradores.
+
+    Weak
+    vs swarms, slow fire rate.'
+  viewPrefab: {fileID: 8142879566951745258, guid: 6ccd3652ae09fee4d8d72f3bdca48f99, type: 3}
+  fireMode: 1
+  fireRate: 1.25
+  shotPattern: {fileID: 11400000, guid: 0791edabec037cd448227b5c8d01518b, type: 2}
+  ammoType: {fileID: 11400000, guid: 3f478891be625ca4f907bfeab752eaa1, type: 2}
+  ammoPerShot: 1
+  magazineSize: 5
+  reloadTime: 1.7
+  projectilePrefab: {fileID: 4171255174875198597, guid: 3a6b8cf7027a9fe41bb29d9f8c0d712a, type: 3}
+  projectileSpeed: 80
+  projectileLifeTime: 1.5
+  damage: 60
+  pierceCount: 3
+  fireSound: {fileID: 11400000, guid: 16ee44269a631f0489b3cacd2406057e, type: 2}
+  fireShake: 0.28
