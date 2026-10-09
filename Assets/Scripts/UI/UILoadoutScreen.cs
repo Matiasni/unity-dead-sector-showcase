@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,7 +9,9 @@ public class UILoadoutScreen : MonoBehaviour
     [SerializeField] private UILoadoutCard[] weaponCards;
     [SerializeField] private UILoadoutCard[] abilityCards;
     [SerializeField] private Button deployButton;
-    [SerializeField] private Text summaryLabel;
+    [SerializeField] private TMP_Text summaryLabel;
+    [SerializeField] private TMP_Text weaponCountLabel;
+    [SerializeField] private TMP_Text abilityCountLabel;
 
     private readonly List<WeaponSettings> selectedWeapons = new();
     private readonly List<AbilityDefinition> selectedAbilities = new();
@@ -35,12 +38,13 @@ public class UILoadoutScreen : MonoBehaviour
         var localization = LocalizationManager.Instance;
 
         for (int i = 0; i < weaponCards.Length; i++)
-            weaponCards[i].Setup(localization.Get(catalog.weapons[i].weaponName), localization.Get(catalog.weapons[i].description));
+            weaponCards[i].Setup(localization.Get(catalog.weapons[i].weaponName), localization.Get(catalog.weapons[i].description), catalog.weapons[i].icon);
 
         for (int i = 0; i < abilityCards.Length; i++)
-            abilityCards[i].Setup(localization.Get(catalog.abilities[i].abilityName), localization.Get(catalog.abilities[i].description));
+            abilityCards[i].Setup(localization.Get(catalog.abilities[i].abilityName), localization.Get(catalog.abilities[i].description), catalog.abilities[i].icon);
 
         summaryLabel.text = BuildSummary();
+        RefreshCounters();
     }
 
     public void ToggleWeapon(int index)
@@ -85,6 +89,16 @@ public class UILoadoutScreen : MonoBehaviour
             abilityCards[i].SetSelected(selectedAbilities.Contains(catalog.abilities[i]));
 
         deployButton.interactable = selectedWeapons.Count == WeaponInventory.SlotCount && selectedAbilities.Count == AbilityController.SlotCount;
+
+        RefreshCounters();
+    }
+
+    private void RefreshCounters()
+    {
+        var localization = LocalizationManager.Instance;
+
+        weaponCountLabel.text = localization.Resolve(new LocalizedMessage("{0} / {1} SELECTED", selectedWeapons.Count, WeaponInventory.SlotCount));
+        abilityCountLabel.text = localization.Resolve(new LocalizedMessage("{0} / {1} SELECTED", selectedAbilities.Count, AbilityController.SlotCount));
     }
 
     private static string BuildSummary()

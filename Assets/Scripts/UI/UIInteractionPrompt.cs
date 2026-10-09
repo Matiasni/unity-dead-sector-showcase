@@ -1,13 +1,14 @@
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class UIInteractionPrompt : MonoBehaviour
 {
-    [SerializeField] private Text label;
+    [SerializeField] private GameObject panel;
+    [SerializeField] private TMP_Text label;
 
     private void Awake()
     {
-        label.enabled = false;
+        panel.SetActive(false);
     }
 
     private void OnEnable()
@@ -22,7 +23,7 @@ public class UIInteractionPrompt : MonoBehaviour
 
     private void UpdatePrompt(LocalizedMessage prompt)
     {
-        label.text = LocalizationManager.Instance.Resolve(prompt);
-        label.enabled = !prompt.IsEmpty;
+        label.text = KeyGlyphs.Format(LocalizationManager.Instance.Resolve(prompt));
+        panel.SetActive(!prompt.IsEmpty);
     }
 }

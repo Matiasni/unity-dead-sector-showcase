@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Stim
   m_EditorClassIdentifier: Assembly-CSharp::HealAbilityDefinition
   abilityName: Stim
-  uiColor: {r: 0.25, g: 0.7, b: 0.35, a: 1}
+  description: 
+  icon: {fileID: 567297463, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
+  uiColor: {r: 0.5411765, g: 0.7529412, b: 0.28235295, a: 1}
   cooldown: 1
   costResource: {fileID: 11400000, guid: d5cc9b9ac2dc9354795a11695ef888a7, type: 2}
   costAmount: 1

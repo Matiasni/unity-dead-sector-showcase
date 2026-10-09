@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: XP
   m_EditorClassIdentifier: Assembly-CSharp::ResourceDefinition
   displayName: XP
-  color: {r: 0.6, g: 0.5, b: 1, a: 1}
+  icon: {fileID: 1694275584, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
+  color: {r: 0.27450982, g: 0.76862746, b: 0.72156864, a: 1}
   maxAmount: 0

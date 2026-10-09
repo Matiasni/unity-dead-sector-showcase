@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Scrap
   m_EditorClassIdentifier: Assembly-CSharp::ResourceDefinition
   displayName: Scrap
-  color: {r: 1, g: 0.65, b: 0.2, a: 1}
+  icon: {fileID: -391279035, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
+  color: {r: 0.8, g: 0.34509805, b: 0.17254902, a: 1}
   maxAmount: 0

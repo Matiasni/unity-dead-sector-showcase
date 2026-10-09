@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afca9cda2083f584a965771b77e5fdb7, type: 3}
+  m_Name: ObjectiveStyle
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectiveStyle
+  markers:
+  - label: A
+    marker: {fileID: 1551989206, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
+    textColor: {r: 0.89411765, g: 0.87058824, b: 0.80784315, a: 1}
+  - label: B
+    marker: {fileID: 873692754, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
+    textColor: {r: 0.89411765, g: 0.87058824, b: 0.80784315, a: 1}
+  - label: C
+    marker: {fileID: -1788828017, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
+    textColor: {r: 0.89411765, g: 0.87058824, b: 0.80784315, a: 1}
+  - label: E
+    marker: {fileID: 2065643289, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
+    textColor: {r: 0.5411765, g: 0.7529412, b: 0.28235295, a: 1}
+  blankMarker: {fileID: 318363917, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
+  completedMarker: {fileID: 477030835, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
+  lockedMarker: {fileID: -1729149635, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
+  checkEmpty: {fileID: 168097254, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
+  checkDone: {fileID: 1780880640, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
+  checkLocked: {fileID: 785221679, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
+  activeColor: {r: 0.89411765, g: 0.87058824, b: 0.80784315, a: 1}
+  completedColor: {r: 0.5882353, g: 0.6117647, b: 0.6117647, a: 1}
+  lockedColor: {r: 0.5882353, g: 0.6117647, b: 0.6117647, a: 0.7}

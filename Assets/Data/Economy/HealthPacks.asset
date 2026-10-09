@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: HealthPacks
   m_EditorClassIdentifier: Assembly-CSharp::ResourceDefinition
   displayName: Stims
-  color: {r: 0.4, g: 1, b: 0.5, a: 1}
+  icon: {fileID: 567297463, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
+  color: {r: 0.5411765, g: 0.7529412, b: 0.28235295, a: 1}
   maxAmount: 3

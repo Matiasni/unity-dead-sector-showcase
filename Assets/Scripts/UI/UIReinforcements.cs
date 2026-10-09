@@ -1,9 +1,10 @@
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class UIReinforcements : MonoBehaviour
 {
-    [SerializeField] private Text label;
+    [SerializeField] private TMP_Text label;
+    [SerializeField] private UIPips pips;
     [SerializeField] private Color normalColor = Color.white;
     [SerializeField] private Color lastLifeColor = new(1f, 0.35f, 0.3f);
 
@@ -19,7 +20,7 @@ public class UIReinforcements : MonoBehaviour
 
     private void UpdateReinforcements(int remaining)
     {
-        label.text = LocalizationManager.Instance.Resolve(new LocalizedMessage("Reinforcements  {0}", remaining));
+        pips.Show(remaining, remaining);
         label.color = remaining > 0 ? normalColor : lastLifeColor;
     }
 }

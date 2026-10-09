@@ -1,10 +1,12 @@
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
-[RequireComponent(typeof(Text))]
+[RequireComponent(typeof(TMP_Text))]
 public class LocalizedText : LocalizedLabel
 {
-    protected override string ReadText() => GetComponent<Text>().text;
+    [SerializeField] private bool formatKeys;
 
-    protected override void WriteText(string value) => GetComponent<Text>().text = value;
+    protected override string ReadText() => GetComponent<TMP_Text>().text;
+
+    protected override void WriteText(string value) => GetComponent<TMP_Text>().text = formatKeys ? KeyGlyphs.Format(value) : value;
 }

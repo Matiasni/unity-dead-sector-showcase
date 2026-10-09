@@ -1,11 +1,13 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UIExperienceBar : MonoBehaviour
 {
     [SerializeField] private Slider bar;
-    [SerializeField] private Text levelLabel;
-    [SerializeField] private Text xpLabel;
+    [SerializeField] private TMP_Text badgeLabel;
+    [SerializeField] private TMP_Text levelLabel;
+    [SerializeField] private TMP_Text xpLabel;
 
     private void OnEnable()
     {
@@ -22,6 +24,7 @@ public class UIExperienceBar : MonoBehaviour
     private void UpdateExperience(ExperienceStatus status)
     {
         bar.value = status.Progress;
+        badgeLabel.text = status.Level.ToString();
         levelLabel.text = LocalizationManager.Instance.Resolve(new LocalizedMessage("LVL {0}", status.Level));
         xpLabel.text = LocalizationManager.Instance.Resolve(new LocalizedMessage("{0} / {1} XP", status.Xp, status.NextLevelXp));
     }

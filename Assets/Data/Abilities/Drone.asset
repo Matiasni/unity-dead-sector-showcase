@@ -16,7 +16,8 @@ MonoBehaviour:
   description: 'Constant damage that follows you.
 
     Clears Melee while you move.'
-  uiColor: {r: 0.3, g: 0.5, b: 0.85, a: 1}
+  icon: {fileID: 1439641488, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
+  uiColor: {r: 0.89411765, g: 0.87058824, b: 0.80784315, a: 1}
   cooldown: 20
   costResource: {fileID: 0}
   costAmount: 1

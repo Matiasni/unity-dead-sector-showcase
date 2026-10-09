@@ -17,6 +17,6 @@ public class UIHealthNumbers : MonoBehaviour
 
     private void UpdateHealth(int current, int max)
     {
-        text.text = current.ToString() + " " + max.ToString();
+        text.text = $"{current}<size=65%><color=#969C9C> / {max}</color></size>";
     }
 }

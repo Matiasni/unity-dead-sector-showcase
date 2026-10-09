@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Grenades
   m_EditorClassIdentifier: Assembly-CSharp::ResourceDefinition
   displayName: Grenades
-  color: {r: 0.7, g: 0.85, b: 0.3, a: 1}
+  icon: {fileID: 975440626, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
+  color: {r: 0.9411765, g: 0.6745098, b: 0.15686275, a: 1}
   maxAmount: 4

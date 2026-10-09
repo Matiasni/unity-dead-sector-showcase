@@ -1,12 +1,13 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UIUpgradeChoice : MonoBehaviour
 {
     [SerializeField] private Button[] optionButtons;
-    [SerializeField] private Text[] titleLabels;
-    [SerializeField] private Text[] descriptionLabels;
-    [SerializeField] private Text[] categoryLabels;
+    [SerializeField] private TMP_Text[] titleLabels;
+    [SerializeField] private TMP_Text[] descriptionLabels;
+    [SerializeField] private TMP_Text[] categoryLabels;
 
     private UpgradeDefinition[] options = new UpgradeDefinition[0];
 

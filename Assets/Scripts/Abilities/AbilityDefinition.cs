@@ -5,6 +5,7 @@ public abstract class AbilityDefinition : ScriptableObject
     [Header("General")]
     public string abilityName;
     [TextArea] public string description;
+    public Sprite icon;
     public Color uiColor = Color.white;
     [Min(0f), Tooltip("Seconds between uses")]
     public float cooldown = 5f;

@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DashAbilityDefinition
   abilityName: Dash
   description: 
-  uiColor: {r: 0.45, g: 0.5, b: 0.6, a: 1}
+  icon: {fileID: -2110455482, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
+  uiColor: {r: 0.89411765, g: 0.87058824, b: 0.80784315, a: 1}
   cooldown: 1.5
   costResource: {fileID: 0}
   costAmount: 1
@@ -22,10 +23,3 @@ MonoBehaviour:
   duration: 0.18
   combatLockDuration: 0.25
   invulnerabilityDuration: 0.2
-  pushRadius: 1.8
-  pushSpeed: 12
-  pushDuration: 0.25
-  pushDamage: 10
-  pushMask:
-    serializedVersion: 2
-    m_Bits: 1024

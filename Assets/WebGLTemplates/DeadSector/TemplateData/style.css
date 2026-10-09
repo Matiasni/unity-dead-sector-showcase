@@ -1,0 +1,10 @@
+html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: {{{ BACKGROUND_COLOR }}} }
+#unity-container { position: fixed; inset: 0 }
+#unity-canvas { display: block; width: 100%; height: 100%; background: {{{ BACKGROUND_COLOR }}}; outline: none }
+#unity-loading { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); text-align: center; font-family: Arial, sans-serif; color: #e8e8e8 }
+#unity-title { font-size: 36px; letter-spacing: 4px; margin-bottom: 16px }
+#unity-progress { width: 280px; height: 8px; background: rgba(255, 255, 255, 0.15) }
+#unity-progress-fill { width: 0%; height: 100%; background: #e8c547 }
+#unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); display: none; font-family: Arial, sans-serif }
+.banner-warning { background: #e8c547; padding: 10px }
+.banner-error { background: #c0392b; color: white; padding: 10px }

@@ -19,11 +19,13 @@ MonoBehaviour:
     up close.
 
     Useless beyond ~8 m.'
+  icon: {fileID: 1330119923, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
   viewPrefab: {fileID: 5691950817691660771, guid: ea638d569ad0add42950eca93301420d, type: 3}
   fireMode: 1
   fireRate: 1.7
   shotPattern: {fileID: 11400000, guid: eafb38a1b98982747bb880b50355cde8, type: 2}
   ammoType: {fileID: 11400000, guid: 673039023255a664fb095dc67d159ae3, type: 2}
+  ammoIcon: {fileID: 306139937, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
   ammoPerShot: 1
   magazineSize: 6
   reloadTime: 1.5

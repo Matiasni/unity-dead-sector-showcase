@@ -1,14 +1,18 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UIResourceCounter : MonoBehaviour
 {
     [SerializeField] private ResourceDefinition resource;
-    [SerializeField] private Text label;
+    [SerializeField] private Image icon;
+    [SerializeField] private TMP_Text valueLabel;
 
     private void Awake()
     {
-        UpdateLabel(0);
+        icon.sprite = resource.icon;
+        icon.color = resource.color;
+        valueLabel.text = "0";
     }
 
     private void OnEnable()
@@ -24,12 +28,6 @@ public class UIResourceCounter : MonoBehaviour
     private void UpdateResource(ResourceDefinition changed, int amount, int delta)
     {
         if (changed == resource)
-            UpdateLabel(amount);
-    }
-
-    private void UpdateLabel(int amount)
-    {
-        label.text = $"{LocalizationManager.Instance.Get(resource.displayName)}  {amount}";
-        label.color = resource.color;
+            valueLabel.text = amount.ToString();
     }
 }

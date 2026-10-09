@@ -5,15 +5,12 @@ public class MouseAimProvider : MonoBehaviour, IAimProvider
 {
     [SerializeField] private Camera mainCamera;
 
-    private void Awake()
-    {
-        if (mainCamera == null)
-            mainCamera = Camera.main;
-    }
-
     public Vector3 GetAimPoint()
     {
-        if (Mouse.current == null)
+        if (mainCamera == null)
+            mainCamera = GameCamera.Current;
+
+        if (Mouse.current == null || mainCamera == null)
             return transform.position + transform.forward;
 
         Ray ray = mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue());
