@@ -1,0 +1,2396 @@
+{
+ "texture": "DeadSector_UI_Atlas.png",
+ "width": 2048,
+ "height": 1024,
+ "referenceResolution": [
+  1920,
+  1080
+ ],
+ "palette": {
+  "BG": "#0C0E10",
+  "METAL": "#16191B",
+  "METAL2": "#202427",
+  "STEEL": "#545A5C",
+  "STEEL_DK": "#383C3E",
+  "STEEL_HI": "#969C9C",
+  "BONE": "#E4DECE",
+  "AMBER": "#F0AC28",
+  "AMBER_HI": "#FFD678",
+  "AMBER_DK": "#A66E16",
+  "INK": "#1C1408",
+  "RUST": "#CC582C",
+  "HP": "#8AC048",
+  "HP_DK": "#4A7426",
+  "DANGER": "#DE3C2C",
+  "XP": "#46C4B8",
+  "CYAN": "#54B8F0"
+ },
+ "sprites": [
+  {
+   "name": "btn_secondary_normal",
+   "group": "buttons",
+   "imageType": "Sliced",
+   "x": 1830,
+   "y": 431,
+   "w": 200,
+   "h": 56,
+   "unityRect": {
+    "x": 1830,
+    "y": 537,
+    "w": 200,
+    "h": 56
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 20,
+    "b": 18,
+    "r": 20,
+    "t": 18
+   },
+   "notes": ""
+  },
+  {
+   "name": "btn_secondary_hover",
+   "group": "buttons",
+   "imageType": "Sliced",
+   "x": 2,
+   "y": 517,
+   "w": 200,
+   "h": 56,
+   "unityRect": {
+    "x": 2,
+    "y": 451,
+    "w": 200,
+    "h": 56
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 20,
+    "b": 18,
+    "r": 20,
+    "t": 18
+   },
+   "notes": ""
+  },
+  {
+   "name": "btn_secondary_pressed",
+   "group": "buttons",
+   "imageType": "Sliced",
+   "x": 208,
+   "y": 517,
+   "w": 200,
+   "h": 56,
+   "unityRect": {
+    "x": 208,
+    "y": 451,
+    "w": 200,
+    "h": 56
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 20,
+    "b": 18,
+    "r": 20,
+    "t": 18
+   },
+   "notes": ""
+  },
+  {
+   "name": "btn_secondary_disabled",
+   "group": "buttons",
+   "imageType": "Sliced",
+   "x": 414,
+   "y": 517,
+   "w": 200,
+   "h": 56,
+   "unityRect": {
+    "x": 414,
+    "y": 451,
+    "w": 200,
+    "h": 56
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 20,
+    "b": 18,
+    "r": 20,
+    "t": 18
+   },
+   "notes": ""
+  },
+  {
+   "name": "btn_primary_normal",
+   "group": "buttons",
+   "imageType": "Sliced",
+   "x": 620,
+   "y": 517,
+   "w": 200,
+   "h": 56,
+   "unityRect": {
+    "x": 620,
+    "y": 451,
+    "w": 200,
+    "h": 56
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 20,
+    "b": 18,
+    "r": 20,
+    "t": 18
+   },
+   "notes": ""
+  },
+  {
+   "name": "btn_primary_hover",
+   "group": "buttons",
+   "imageType": "Sliced",
+   "x": 826,
+   "y": 517,
+   "w": 200,
+   "h": 56,
+   "unityRect": {
+    "x": 826,
+    "y": 451,
+    "w": 200,
+    "h": 56
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 20,
+    "b": 18,
+    "r": 20,
+    "t": 18
+   },
+   "notes": ""
+  },
+  {
+   "name": "btn_primary_pressed",
+   "group": "buttons",
+   "imageType": "Sliced",
+   "x": 1032,
+   "y": 517,
+   "w": 200,
+   "h": 56,
+   "unityRect": {
+    "x": 1032,
+    "y": 451,
+    "w": 200,
+    "h": 56
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 20,
+    "b": 18,
+    "r": 20,
+    "t": 18
+   },
+   "notes": ""
+  },
+  {
+   "name": "btn_primary_disabled",
+   "group": "buttons",
+   "imageType": "Sliced",
+   "x": 1238,
+   "y": 517,
+   "w": 200,
+   "h": 56,
+   "unityRect": {
+    "x": 1238,
+    "y": 451,
+    "w": 200,
+    "h": 56
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 20,
+    "b": 18,
+    "r": 20,
+    "t": 18
+   },
+   "notes": ""
+  },
+  {
+   "name": "panel_main",
+   "group": "panels",
+   "imageType": "Sliced",
+   "x": 1271,
+   "y": 264,
+   "w": 96,
+   "h": 96,
+   "unityRect": {
+    "x": 1271,
+    "y": 664,
+    "w": 96,
+    "h": 96
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 24,
+    "b": 24,
+    "r": 24,
+    "t": 24
+   },
+   "notes": ""
+  },
+  {
+   "name": "panel_plain",
+   "group": "panels",
+   "imageType": "Sliced",
+   "x": 2,
+   "y": 579,
+   "w": 48,
+   "h": 48,
+   "unityRect": {
+    "x": 2,
+    "y": 397,
+    "w": 48,
+    "h": 48
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 14,
+    "b": 14,
+    "r": 14,
+    "t": 14
+   },
+   "notes": ""
+  },
+  {
+   "name": "panel_backplate",
+   "group": "panels",
+   "imageType": "Sliced",
+   "x": 56,
+   "y": 579,
+   "w": 48,
+   "h": 48,
+   "unityRect": {
+    "x": 56,
+    "y": 397,
+    "w": 48,
+    "h": 48
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 12,
+    "b": 12,
+    "r": 12,
+    "t": 12
+   },
+   "notes": ""
+  },
+  {
+   "name": "panel_tutorial",
+   "group": "panels",
+   "imageType": "Sliced",
+   "x": 2,
+   "y": 431,
+   "w": 160,
+   "h": 80,
+   "unityRect": {
+    "x": 2,
+    "y": 513,
+    "w": 160,
+    "h": 80
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 28,
+    "b": 20,
+    "r": 20,
+    "t": 20
+   },
+   "notes": "Left 7px is the amber bar: give the text a left padding of ~24px."
+  },
+  {
+   "name": "panel_header",
+   "group": "panels",
+   "imageType": "Sliced",
+   "x": 972,
+   "y": 579,
+   "w": 160,
+   "h": 32,
+   "unityRect": {
+    "x": 972,
+    "y": 413,
+    "w": 160,
+    "h": 32
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 16,
+    "b": 12,
+    "r": 16,
+    "t": 12
+   },
+   "notes": "Dark text (INK) on top."
+  },
+  {
+   "name": "tag_amber",
+   "group": "panels",
+   "imageType": "Sliced",
+   "x": 1398,
+   "y": 579,
+   "w": 64,
+   "h": 24,
+   "unityRect": {
+    "x": 1398,
+    "y": 421,
+    "w": 64,
+    "h": 24
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 10,
+    "b": 8,
+    "r": 10,
+    "t": 8
+   },
+   "notes": ""
+  },
+  {
+   "name": "tag_dark",
+   "group": "panels",
+   "imageType": "Sliced",
+   "x": 1468,
+   "y": 579,
+   "w": 64,
+   "h": 24,
+   "unityRect": {
+    "x": 1468,
+    "y": 421,
+    "w": 64,
+    "h": 24
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 10,
+    "b": 8,
+    "r": 10,
+    "t": 8
+   },
+   "notes": ""
+  },
+  {
+   "name": "key_badge",
+   "group": "tutorial",
+   "imageType": "Sliced",
+   "x": 1208,
+   "y": 579,
+   "w": 32,
+   "h": 32,
+   "unityRect": {
+    "x": 1208,
+    "y": 413,
+    "w": 32,
+    "h": 32
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 10,
+    "b": 10,
+    "r": 10,
+    "t": 10
+   },
+   "notes": "Keycap. Dark text. Widens for SPACE/ESC."
+  },
+  {
+   "name": "key_badge_dark",
+   "group": "tutorial",
+   "imageType": "Sliced",
+   "x": 1246,
+   "y": 579,
+   "w": 32,
+   "h": 32,
+   "unityRect": {
+    "x": 1246,
+    "y": 413,
+    "w": 32,
+    "h": 32
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 10,
+    "b": 10,
+    "r": 10,
+    "t": 10
+   },
+   "notes": "Outlined keycap. Light text."
+  },
+  {
+   "name": "deco_divider",
+   "group": "deco",
+   "imageType": "Sliced",
+   "x": 2,
+   "y": 661,
+   "w": 96,
+   "h": 8,
+   "unityRect": {
+    "x": 2,
+    "y": 355,
+    "w": 96,
+    "h": 8
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 16,
+    "b": 0,
+    "r": 16,
+    "t": 0
+   },
+   "notes": ""
+  },
+  {
+   "name": "deco_section_mark",
+   "group": "deco",
+   "imageType": "Simple",
+   "x": 1538,
+   "y": 579,
+   "w": 36,
+   "h": 24,
+   "unityRect": {
+    "x": 1538,
+    "y": 421,
+    "w": 36,
+    "h": 24
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "Goes left of a section title (layout: mark | title | line)."
+  },
+  {
+   "name": "deco_section_line",
+   "group": "deco",
+   "imageType": "Simple",
+   "x": 1850,
+   "y": 633,
+   "w": 128,
+   "h": 8,
+   "unityRect": {
+    "x": 1850,
+    "y": 383,
+    "w": 128,
+    "h": 8
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "Fading line to the right of a section title. Stretch freely (Simple)."
+  },
+  {
+   "name": "deco_title_bar",
+   "group": "deco",
+   "imageType": "Sliced",
+   "x": 986,
+   "y": 633,
+   "w": 256,
+   "h": 12,
+   "unityRect": {
+    "x": 986,
+    "y": 379,
+    "w": 256,
+    "h": 12
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 140,
+    "b": 0,
+    "r": 16,
+    "t": 0
+   },
+   "notes": ""
+  },
+  {
+   "name": "deco_hazard_tile",
+   "group": "deco",
+   "imageType": "Tiled",
+   "x": 1138,
+   "y": 579,
+   "w": 64,
+   "h": 32,
+   "unityRect": {
+    "x": 1138,
+    "y": 413,
+    "w": 64,
+    "h": 32
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "Seamless. Image Type = Tiled. Use thin (8-16px tall) strips."
+  },
+  {
+   "name": "deco_corner",
+   "group": "deco",
+   "imageType": "Simple",
+   "x": 1284,
+   "y": 579,
+   "w": 32,
+   "h": 32,
+   "unityRect": {
+    "x": 1284,
+    "y": 413,
+    "w": 32,
+    "h": 32
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "Top-left bracket. Rotate/flip (scale -1) for other corners."
+  },
+  {
+   "name": "bg_grid_tile",
+   "group": "deco",
+   "imageType": "Tiled",
+   "x": 780,
+   "y": 431,
+   "w": 64,
+   "h": 64,
+   "unityRect": {
+    "x": 780,
+    "y": 529,
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "Seamless tactical grid for menu backgrounds."
+  },
+  {
+   "name": "bg_vignette",
+   "group": "deco",
+   "imageType": "Simple",
+   "x": 2,
+   "y": 2,
+   "w": 256,
+   "h": 256,
+   "unityRect": {
+    "x": 2,
+    "y": 766,
+    "w": 256,
+    "h": 256
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "Stretch full screen over backgrounds (Simple)."
+  },
+  {
+   "name": "bar_frame",
+   "group": "bars",
+   "imageType": "Sliced",
+   "x": 726,
+   "y": 579,
+   "w": 240,
+   "h": 32,
+   "unityRect": {
+    "x": 726,
+    "y": 413,
+    "w": 240,
+    "h": 32
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 12,
+    "b": 10,
+    "r": 12,
+    "t": 10
+   },
+   "notes": "HP bar frame. Inner fill area = rect inset 5px each side."
+  },
+  {
+   "name": "bar_frame_thin",
+   "group": "bars",
+   "imageType": "Sliced",
+   "x": 740,
+   "y": 633,
+   "w": 240,
+   "h": 14,
+   "unityRect": {
+    "x": 740,
+    "y": 377,
+    "w": 240,
+    "h": 14
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 8,
+    "b": 5,
+    "r": 8,
+    "t": 5
+   },
+   "notes": "XP bar frame. Fill inset 3px."
+  },
+  {
+   "name": "bar_fill_white",
+   "group": "bars",
+   "imageType": "Sliced",
+   "x": 1670,
+   "y": 579,
+   "w": 230,
+   "h": 22,
+   "unityRect": {
+    "x": 1670,
+    "y": 423,
+    "w": 230,
+    "h": 22
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 8,
+    "b": 0,
+    "r": 8,
+    "t": 0
+   },
+   "notes": "Use Image Type = Filled (Horizontal) at native size, or Sliced + RectTransform anchorMax.x = value."
+  },
+  {
+   "name": "bar_fill_hp",
+   "group": "bars",
+   "imageType": "Sliced",
+   "x": 2,
+   "y": 633,
+   "w": 230,
+   "h": 22,
+   "unityRect": {
+    "x": 2,
+    "y": 369,
+    "w": 230,
+    "h": 22
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 8,
+    "b": 0,
+    "r": 8,
+    "t": 0
+   },
+   "notes": "Use Image Type = Filled (Horizontal) at native size, or Sliced + RectTransform anchorMax.x = value."
+  },
+  {
+   "name": "bar_fill_danger",
+   "group": "bars",
+   "imageType": "Sliced",
+   "x": 238,
+   "y": 633,
+   "w": 230,
+   "h": 22,
+   "unityRect": {
+    "x": 238,
+    "y": 369,
+    "w": 230,
+    "h": 22
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 8,
+    "b": 0,
+    "r": 8,
+    "t": 0
+   },
+   "notes": "Use Image Type = Filled (Horizontal) at native size, or Sliced + RectTransform anchorMax.x = value."
+  },
+  {
+   "name": "bar_fill_trail",
+   "group": "bars",
+   "imageType": "Sliced",
+   "x": 474,
+   "y": 633,
+   "w": 230,
+   "h": 22,
+   "unityRect": {
+    "x": 474,
+    "y": 369,
+    "w": 230,
+    "h": 22
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 8,
+    "b": 0,
+    "r": 8,
+    "t": 0
+   },
+   "notes": "Use Image Type = Filled (Horizontal) at native size, or Sliced + RectTransform anchorMax.x = value."
+  },
+  {
+   "name": "bar_fill_xp",
+   "group": "bars",
+   "imageType": "Sliced",
+   "x": 1370,
+   "y": 633,
+   "w": 234,
+   "h": 8,
+   "unityRect": {
+    "x": 1370,
+    "y": 383,
+    "w": 234,
+    "h": 8
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 4,
+    "b": 0,
+    "r": 4,
+    "t": 0
+   },
+   "notes": "Use Image Type = Filled (Horizontal) at native size, or Sliced + RectTransform anchorMax.x = value."
+  },
+  {
+   "name": "bar_fill_thin_white",
+   "group": "bars",
+   "imageType": "Sliced",
+   "x": 1610,
+   "y": 633,
+   "w": 234,
+   "h": 8,
+   "unityRect": {
+    "x": 1610,
+    "y": 383,
+    "w": 234,
+    "h": 8
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 4,
+    "b": 0,
+    "r": 4,
+    "t": 0
+   },
+   "notes": "Use Image Type = Filled (Horizontal) at native size, or Sliced + RectTransform anchorMax.x = value."
+  },
+  {
+   "name": "bar_ticks_tile",
+   "group": "bars",
+   "imageType": "Tiled",
+   "x": 710,
+   "y": 633,
+   "w": 24,
+   "h": 22,
+   "unityRect": {
+    "x": 710,
+    "y": 369,
+    "w": 24,
+    "h": 22
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "Overlay on the fill area with Image Type Tiled to segment the bar every 24px."
+  },
+  {
+   "name": "badge_level",
+   "group": "bars",
+   "imageType": "Simple",
+   "x": 1444,
+   "y": 517,
+   "w": 56,
+   "h": 56,
+   "unityRect": {
+    "x": 1444,
+    "y": 451,
+    "w": 56,
+    "h": 56
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "Put the level number (TMP) centered on top."
+  },
+  {
+   "name": "wbar_frame",
+   "group": "world",
+   "imageType": "Sliced",
+   "x": 1248,
+   "y": 633,
+   "w": 80,
+   "h": 12,
+   "unityRect": {
+    "x": 1248,
+    "y": 379,
+    "w": 80,
+    "h": 12
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 5,
+    "b": 4,
+    "r": 5,
+    "t": 4
+   },
+   "notes": "World-space bar frame. Fill inset 2px."
+  },
+  {
+   "name": "wbar_fill_white",
+   "group": "world",
+   "imageType": "Sliced",
+   "x": 104,
+   "y": 661,
+   "w": 76,
+   "h": 8,
+   "unityRect": {
+    "x": 104,
+    "y": 355,
+    "w": 76,
+    "h": 8
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 3,
+    "b": 0,
+    "r": 3,
+    "t": 0
+   },
+   "notes": "Filled Horizontal or Sliced."
+  },
+  {
+   "name": "wbar_fill_hp",
+   "group": "world",
+   "imageType": "Sliced",
+   "x": 186,
+   "y": 661,
+   "w": 76,
+   "h": 8,
+   "unityRect": {
+    "x": 186,
+    "y": 355,
+    "w": 76,
+    "h": 8
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 3,
+    "b": 0,
+    "r": 3,
+    "t": 0
+   },
+   "notes": "Filled Horizontal or Sliced."
+  },
+  {
+   "name": "wbar_fill_reload",
+   "group": "world",
+   "imageType": "Sliced",
+   "x": 268,
+   "y": 661,
+   "w": 76,
+   "h": 8,
+   "unityRect": {
+    "x": 268,
+    "y": 355,
+    "w": 76,
+    "h": 8
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 3,
+    "b": 0,
+    "r": 3,
+    "t": 0
+   },
+   "notes": "Filled Horizontal or Sliced."
+  },
+  {
+   "name": "ring_reload_bg",
+   "group": "world",
+   "imageType": "Simple",
+   "x": 850,
+   "y": 431,
+   "w": 64,
+   "h": 64,
+   "unityRect": {
+    "x": 850,
+    "y": 529,
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": ""
+  },
+  {
+   "name": "ring_reload_fill",
+   "group": "world",
+   "imageType": "Filled",
+   "x": 920,
+   "y": 431,
+   "w": 64,
+   "h": 64,
+   "unityRect": {
+    "x": 920,
+    "y": 529,
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "Image Type Filled, Radial 360, Origin Top, Clockwise. Tint amber."
+  },
+  {
+   "name": "icon_reload",
+   "group": "icons",
+   "imageType": "Simple",
+   "x": 110,
+   "y": 579,
+   "w": 48,
+   "h": 48,
+   "unityRect": {
+    "x": 110,
+    "y": 397,
+    "w": 48,
+    "h": 48
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "White - tint with Image.color."
+  },
+  {
+   "name": "icon_health",
+   "group": "icons",
+   "imageType": "Simple",
+   "x": 164,
+   "y": 579,
+   "w": 48,
+   "h": 48,
+   "unityRect": {
+    "x": 164,
+    "y": 397,
+    "w": 48,
+    "h": 48
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "White - tint with Image.color."
+  },
+  {
+   "name": "icon_xp",
+   "group": "icons",
+   "imageType": "Simple",
+   "x": 218,
+   "y": 579,
+   "w": 48,
+   "h": 48,
+   "unityRect": {
+    "x": 218,
+    "y": 397,
+    "w": 48,
+    "h": 48
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "White - tint with Image.color."
+  },
+  {
+   "name": "icon_scrap",
+   "group": "icons",
+   "imageType": "Simple",
+   "x": 272,
+   "y": 579,
+   "w": 48,
+   "h": 48,
+   "unityRect": {
+    "x": 272,
+    "y": 397,
+    "w": 48,
+    "h": 48
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "White - tint with Image.color."
+  },
+  {
+   "name": "icon_reinforcement",
+   "group": "icons",
+   "imageType": "Simple",
+   "x": 326,
+   "y": 579,
+   "w": 48,
+   "h": 48,
+   "unityRect": {
+    "x": 326,
+    "y": 397,
+    "w": 48,
+    "h": 48
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "White - tint with Image.color."
+  },
+  {
+   "name": "icon_info",
+   "group": "icons",
+   "imageType": "Simple",
+   "x": 380,
+   "y": 579,
+   "w": 48,
+   "h": 48,
+   "unityRect": {
+    "x": 380,
+    "y": 397,
+    "w": 48,
+    "h": 48
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "White - tint with Image.color."
+  },
+  {
+   "name": "icon_warning",
+   "group": "icons",
+   "imageType": "Simple",
+   "x": 434,
+   "y": 579,
+   "w": 48,
+   "h": 48,
+   "unityRect": {
+    "x": 434,
+    "y": 397,
+    "w": 48,
+    "h": 48
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "White - tint with Image.color."
+  },
+  {
+   "name": "icon_check",
+   "group": "icons",
+   "imageType": "Simple",
+   "x": 488,
+   "y": 579,
+   "w": 48,
+   "h": 48,
+   "unityRect": {
+    "x": 488,
+    "y": 397,
+    "w": 48,
+    "h": 48
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "White - tint with Image.color."
+  },
+  {
+   "name": "icon_lock",
+   "group": "icons",
+   "imageType": "Simple",
+   "x": 542,
+   "y": 579,
+   "w": 48,
+   "h": 48,
+   "unityRect": {
+    "x": 542,
+    "y": 397,
+    "w": 48,
+    "h": 48
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "White - tint with Image.color."
+  },
+  {
+   "name": "icon_mouse_lmb",
+   "group": "tutorial",
+   "imageType": "Simple",
+   "x": 596,
+   "y": 579,
+   "w": 32,
+   "h": 44,
+   "unityRect": {
+    "x": 596,
+    "y": 401,
+    "w": 32,
+    "h": 44
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "White - tint."
+  },
+  {
+   "name": "icon_mouse_rmb",
+   "group": "tutorial",
+   "imageType": "Simple",
+   "x": 634,
+   "y": 579,
+   "w": 32,
+   "h": 44,
+   "unityRect": {
+    "x": 634,
+    "y": 401,
+    "w": 32,
+    "h": 44
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "White - tint."
+  },
+  {
+   "name": "icon_mouse_wheel",
+   "group": "tutorial",
+   "imageType": "Simple",
+   "x": 672,
+   "y": 579,
+   "w": 32,
+   "h": 44,
+   "unityRect": {
+    "x": 672,
+    "y": 401,
+    "w": 32,
+    "h": 44
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "White - tint."
+  },
+  {
+   "name": "icon_ability_shield",
+   "group": "abilities",
+   "imageType": "Simple",
+   "x": 990,
+   "y": 431,
+   "w": 64,
+   "h": 64,
+   "unityRect": {
+    "x": 990,
+    "y": 529,
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "White - tint with Image.color."
+  },
+  {
+   "name": "icon_ability_drone",
+   "group": "abilities",
+   "imageType": "Simple",
+   "x": 1060,
+   "y": 431,
+   "w": 64,
+   "h": 64,
+   "unityRect": {
+    "x": 1060,
+    "y": 529,
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "White - tint with Image.color."
+  },
+  {
+   "name": "icon_ability_grenade",
+   "group": "abilities",
+   "imageType": "Simple",
+   "x": 1130,
+   "y": 431,
+   "w": 64,
+   "h": 64,
+   "unityRect": {
+    "x": 1130,
+    "y": 529,
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "White - tint with Image.color."
+  },
+  {
+   "name": "icon_ability_stim",
+   "group": "abilities",
+   "imageType": "Simple",
+   "x": 1200,
+   "y": 431,
+   "w": 64,
+   "h": 64,
+   "unityRect": {
+    "x": 1200,
+    "y": 529,
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "White - tint with Image.color."
+  },
+  {
+   "name": "icon_ability_dash",
+   "group": "abilities",
+   "imageType": "Simple",
+   "x": 1270,
+   "y": 431,
+   "w": 64,
+   "h": 64,
+   "unityRect": {
+    "x": 1270,
+    "y": 529,
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "White - tint with Image.color."
+  },
+  {
+   "name": "icon_weapon_rifle",
+   "group": "weapons",
+   "imageType": "Simple",
+   "x": 1506,
+   "y": 517,
+   "w": 160,
+   "h": 48,
+   "unityRect": {
+    "x": 1506,
+    "y": 459,
+    "w": 160,
+    "h": 48
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "White silhouette, facing right. Tint: selected BONE, unselected STEEL."
+  },
+  {
+   "name": "icon_weapon_shotgun",
+   "group": "weapons",
+   "imageType": "Simple",
+   "x": 1672,
+   "y": 517,
+   "w": 160,
+   "h": 48,
+   "unityRect": {
+    "x": 1672,
+    "y": 459,
+    "w": 160,
+    "h": 48
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "White silhouette, facing right. Tint: selected BONE, unselected STEEL."
+  },
+  {
+   "name": "icon_weapon_sniper",
+   "group": "weapons",
+   "imageType": "Simple",
+   "x": 1838,
+   "y": 517,
+   "w": 160,
+   "h": 48,
+   "unityRect": {
+    "x": 1838,
+    "y": 459,
+    "w": 160,
+    "h": 48
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "White silhouette, facing right. Tint: selected BONE, unselected STEEL."
+  },
+  {
+   "name": "icon_ammo_rifle",
+   "group": "weapons",
+   "imageType": "Simple",
+   "x": 1380,
+   "y": 579,
+   "w": 12,
+   "h": 32,
+   "unityRect": {
+    "x": 1380,
+    "y": 413,
+    "w": 12,
+    "h": 32
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "Ammo pip (vertical). Tint full=BONE, spent=STEEL @40% alpha."
+  },
+  {
+   "name": "icon_ammo_shell",
+   "group": "weapons",
+   "imageType": "Simple",
+   "x": 1360,
+   "y": 579,
+   "w": 14,
+   "h": 32,
+   "unityRect": {
+    "x": 1360,
+    "y": 413,
+    "w": 14,
+    "h": 32
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "Ammo pip (vertical). Tint full=BONE, spent=STEEL @40% alpha."
+  },
+  {
+   "name": "icon_ammo_sniper",
+   "group": "weapons",
+   "imageType": "Simple",
+   "x": 710,
+   "y": 579,
+   "w": 10,
+   "h": 40,
+   "unityRect": {
+    "x": 710,
+    "y": 405,
+    "w": 10,
+    "h": 40
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "Ammo pip (vertical). Tint full=BONE, spent=STEEL @40% alpha."
+  },
+  {
+   "name": "weapon_slot_normal",
+   "group": "weapons",
+   "imageType": "Sliced",
+   "x": 168,
+   "y": 431,
+   "w": 300,
+   "h": 76,
+   "unityRect": {
+    "x": 168,
+    "y": 517,
+    "w": 300,
+    "h": 76
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 28,
+    "b": 18,
+    "r": 20,
+    "t": 18
+   },
+   "notes": "Content: key_badge (left) + weapon icon + name + ammo. Left padding ~20px."
+  },
+  {
+   "name": "weapon_slot_selected",
+   "group": "weapons",
+   "imageType": "Sliced",
+   "x": 474,
+   "y": 431,
+   "w": 300,
+   "h": 76,
+   "unityRect": {
+    "x": 474,
+    "y": 517,
+    "w": 300,
+    "h": 76
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 28,
+    "b": 18,
+    "r": 20,
+    "t": 18
+   },
+   "notes": "Content: key_badge (left) + weapon icon + name + ammo. Left padding ~20px."
+  },
+  {
+   "name": "ability_frame_ready",
+   "group": "abilities",
+   "imageType": "Sliced",
+   "x": 1475,
+   "y": 264,
+   "w": 88,
+   "h": 88,
+   "unityRect": {
+    "x": 1475,
+    "y": 672,
+    "w": 88,
+    "h": 88
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 22,
+    "b": 22,
+    "r": 22,
+    "t": 22
+   },
+   "notes": ""
+  },
+  {
+   "name": "ability_frame_cooldown",
+   "group": "abilities",
+   "imageType": "Sliced",
+   "x": 1569,
+   "y": 264,
+   "w": 88,
+   "h": 88,
+   "unityRect": {
+    "x": 1569,
+    "y": 672,
+    "w": 88,
+    "h": 88
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 22,
+    "b": 22,
+    "r": 22,
+    "t": 22
+   },
+   "notes": ""
+  },
+  {
+   "name": "ability_frame_active",
+   "group": "abilities",
+   "imageType": "Sliced",
+   "x": 1663,
+   "y": 264,
+   "w": 88,
+   "h": 88,
+   "unityRect": {
+    "x": 1663,
+    "y": 672,
+    "w": 88,
+    "h": 88
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 22,
+    "b": 22,
+    "r": 22,
+    "t": 22
+   },
+   "notes": ""
+  },
+  {
+   "name": "ability_frame_empty",
+   "group": "abilities",
+   "imageType": "Sliced",
+   "x": 1757,
+   "y": 264,
+   "w": 88,
+   "h": 88,
+   "unityRect": {
+    "x": 1757,
+    "y": 672,
+    "w": 88,
+    "h": 88
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 22,
+    "b": 22,
+    "r": 22,
+    "t": 22
+   },
+   "notes": ""
+  },
+  {
+   "name": "ability_cd_mask",
+   "group": "abilities",
+   "imageType": "Filled",
+   "x": 1851,
+   "y": 264,
+   "w": 88,
+   "h": 88,
+   "unityRect": {
+    "x": 1851,
+    "y": 672,
+    "w": 88,
+    "h": 88
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "Cooldown overlay: Filled Radial360, Origin Top, tint black ~65% alpha. fillAmount = remaining/total."
+  },
+  {
+   "name": "ability_ready_glow",
+   "group": "abilities",
+   "imageType": "Simple",
+   "x": 1137,
+   "y": 264,
+   "w": 128,
+   "h": 128,
+   "unityRect": {
+    "x": 1137,
+    "y": 632,
+    "w": 128,
+    "h": 128
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "Flash when an ability becomes ready (scale 1->1.15, alpha 1->0). Same center as the 88px slot."
+  },
+  {
+   "name": "pip_full",
+   "group": "abilities",
+   "imageType": "Simple",
+   "x": 1334,
+   "y": 633,
+   "w": 12,
+   "h": 12,
+   "unityRect": {
+    "x": 1334,
+    "y": 379,
+    "w": 12,
+    "h": 12
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "Charge pip (e.g. grenades 3/4). Tint."
+  },
+  {
+   "name": "pip_empty",
+   "group": "abilities",
+   "imageType": "Simple",
+   "x": 1352,
+   "y": 633,
+   "w": 12,
+   "h": 12,
+   "unityRect": {
+    "x": 1352,
+    "y": 379,
+    "w": 12,
+    "h": 12
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "Charge pip (e.g. grenades 3/4). Tint."
+  },
+  {
+   "name": "obj_marker_A",
+   "group": "objectives",
+   "imageType": "Simple",
+   "x": 1340,
+   "y": 431,
+   "w": 64,
+   "h": 64,
+   "unityRect": {
+    "x": 1340,
+    "y": 529,
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": ""
+  },
+  {
+   "name": "obj_marker_B",
+   "group": "objectives",
+   "imageType": "Simple",
+   "x": 1410,
+   "y": 431,
+   "w": 64,
+   "h": 64,
+   "unityRect": {
+    "x": 1410,
+    "y": 529,
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": ""
+  },
+  {
+   "name": "obj_marker_C",
+   "group": "objectives",
+   "imageType": "Simple",
+   "x": 1480,
+   "y": 431,
+   "w": 64,
+   "h": 64,
+   "unityRect": {
+    "x": 1480,
+    "y": 529,
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": ""
+  },
+  {
+   "name": "obj_marker_blank",
+   "group": "objectives",
+   "imageType": "Simple",
+   "x": 1550,
+   "y": 431,
+   "w": 64,
+   "h": 64,
+   "unityRect": {
+    "x": 1550,
+    "y": 529,
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": ""
+  },
+  {
+   "name": "obj_marker_extract",
+   "group": "objectives",
+   "imageType": "Simple",
+   "x": 1620,
+   "y": 431,
+   "w": 64,
+   "h": 64,
+   "unityRect": {
+    "x": 1620,
+    "y": 529,
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": ""
+  },
+  {
+   "name": "obj_marker_done",
+   "group": "objectives",
+   "imageType": "Simple",
+   "x": 1690,
+   "y": 431,
+   "w": 64,
+   "h": 64,
+   "unityRect": {
+    "x": 1690,
+    "y": 529,
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": ""
+  },
+  {
+   "name": "obj_marker_locked",
+   "group": "objectives",
+   "imageType": "Simple",
+   "x": 1760,
+   "y": 431,
+   "w": 64,
+   "h": 64,
+   "unityRect": {
+    "x": 1760,
+    "y": 529,
+    "w": 64,
+    "h": 64
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": ""
+  },
+  {
+   "name": "obj_ring_pulse",
+   "group": "objectives",
+   "imageType": "Simple",
+   "x": 1373,
+   "y": 264,
+   "w": 96,
+   "h": 96,
+   "unityRect": {
+    "x": 1373,
+    "y": 664,
+    "w": 96,
+    "h": 96
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "Pulse ring behind the active marker: scale 0.7->1.3 + fade. Tint amber."
+  },
+  {
+   "name": "obj_arrow",
+   "group": "objectives",
+   "imageType": "Simple",
+   "x": 1322,
+   "y": 579,
+   "w": 32,
+   "h": 32,
+   "unityRect": {
+    "x": 1322,
+    "y": 413,
+    "w": 32,
+    "h": 32
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "Off-screen pointer, points RIGHT (+X). Rotate Z toward target."
+  },
+  {
+   "name": "obj_check_empty",
+   "group": "objectives",
+   "imageType": "Simple",
+   "x": 1580,
+   "y": 579,
+   "w": 24,
+   "h": 24,
+   "unityRect": {
+    "x": 1580,
+    "y": 421,
+    "w": 24,
+    "h": 24
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "Objective checklist box."
+  },
+  {
+   "name": "obj_check_done",
+   "group": "objectives",
+   "imageType": "Simple",
+   "x": 1610,
+   "y": 579,
+   "w": 24,
+   "h": 24,
+   "unityRect": {
+    "x": 1610,
+    "y": 421,
+    "w": 24,
+    "h": 24
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "Objective checklist box."
+  },
+  {
+   "name": "obj_check_locked",
+   "group": "objectives",
+   "imageType": "Simple",
+   "x": 1640,
+   "y": 579,
+   "w": 24,
+   "h": 24,
+   "unityRect": {
+    "x": 1640,
+    "y": 421,
+    "w": 24,
+    "h": 24
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "Objective checklist box."
+  },
+  {
+   "name": "card_normal",
+   "group": "loadout",
+   "imageType": "Sliced",
+   "x": 264,
+   "y": 2,
+   "w": 280,
+   "h": 180,
+   "unityRect": {
+    "x": 264,
+    "y": 842,
+    "w": 280,
+    "h": 180
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 36,
+    "b": 32,
+    "r": 36,
+    "t": 36
+   },
+   "notes": "Content padding 24px. Title (Black Ops One) + icon + description (Chakra Petch)."
+  },
+  {
+   "name": "card_hover",
+   "group": "loadout",
+   "imageType": "Sliced",
+   "x": 550,
+   "y": 2,
+   "w": 280,
+   "h": 180,
+   "unityRect": {
+    "x": 550,
+    "y": 842,
+    "w": 280,
+    "h": 180
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 36,
+    "b": 32,
+    "r": 36,
+    "t": 36
+   },
+   "notes": "Content padding 24px. Title (Black Ops One) + icon + description (Chakra Petch)."
+  },
+  {
+   "name": "card_selected",
+   "group": "loadout",
+   "imageType": "Sliced",
+   "x": 836,
+   "y": 2,
+   "w": 280,
+   "h": 180,
+   "unityRect": {
+    "x": 836,
+    "y": 842,
+    "w": 280,
+    "h": 180
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 36,
+    "b": 32,
+    "r": 36,
+    "t": 36
+   },
+   "notes": "Content padding 24px. Title (Black Ops One) + icon + description (Chakra Petch)."
+  },
+  {
+   "name": "card_locked",
+   "group": "loadout",
+   "imageType": "Sliced",
+   "x": 1122,
+   "y": 2,
+   "w": 280,
+   "h": 180,
+   "unityRect": {
+    "x": 1122,
+    "y": 842,
+    "w": 280,
+    "h": 180
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 36,
+    "b": 32,
+    "r": 36,
+    "t": 36
+   },
+   "notes": "Content padding 24px. Title (Black Ops One) + icon + description (Chakra Petch)."
+  },
+  {
+   "name": "logo_deadsector",
+   "group": "menu",
+   "imageType": "Simple",
+   "x": 2,
+   "y": 264,
+   "w": 1129,
+   "h": 161,
+   "unityRect": {
+    "x": 2,
+    "y": 599,
+    "w": 1129,
+    "h": 161
+   },
+   "pivot": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "border": {
+    "l": 0,
+    "b": 0,
+    "r": 0,
+    "t": 0
+   },
+   "notes": "Game title. Subtitle/version go below as TMP text (translatable)."
+  }
+ ]
+}

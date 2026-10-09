@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc83f4debf2f30409a3865066f18158, type: 3}
+  m_Name: CardButtonStyle
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonStyle
+  normal: {fileID: 187582219, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
+  highlighted: {fileID: -909387253, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
+  pressed: {fileID: 373928109, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
+  disabled: {fileID: -1685674403, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
+  labelNormal: {r: 0.89411765, g: 0.87058824, b: 0.80784315, a: 1}
+  labelHighlighted: {r: 0.89411765, g: 0.87058824, b: 0.80784315, a: 1}
+  labelPressed: {r: 0.9411765, g: 0.6745098, b: 0.15686275, a: 1}
+  labelDisabled: {r: 0.5882353, g: 0.6117647, b: 0.6117647, a: 1}
