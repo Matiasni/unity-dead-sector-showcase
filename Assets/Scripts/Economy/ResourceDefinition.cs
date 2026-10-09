@@ -4,6 +4,7 @@ using UnityEngine;
 public class ResourceDefinition : ScriptableObject
 {
     public string displayName;
+    public Sprite icon;
     public Color color = Color.white;
     [Min(0), Tooltip("Max amount the player can carry (0 = unlimited)")]
     public int maxAmount;

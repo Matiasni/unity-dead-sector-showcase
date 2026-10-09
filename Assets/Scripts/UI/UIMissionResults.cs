@@ -1,12 +1,14 @@
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class UIMissionResults : MonoBehaviour
 {
-    [SerializeField] private Text titleLabel;
-    [SerializeField] private Text breakdownLabel;
-    [SerializeField] private Color successColor = new(0.5f, 1f, 0.5f);
-    [SerializeField] private Color failureColor = new(1f, 0.4f, 0.35f);
+    [SerializeField] private TMP_Text titleLabel;
+    [SerializeField] private TMP_Text missionLabel;
+    [SerializeField] private TMP_Text breakdownLabel;
+    [SerializeField] private Color successColor = UIPalette.Health;
+    [SerializeField] private Color failureColor = UIPalette.Danger;
+    [SerializeField] private Color totalColor = UIPalette.Amber;
 
     private void OnEnable()
     {
@@ -24,15 +26,22 @@ public class UIMissionResults : MonoBehaviour
 
         titleLabel.text = localization.Get(result.Success ? "MISSION COMPLETE" : "MISSION FAILED");
         titleLabel.color = result.Success ? successColor : failureColor;
+        missionLabel.text = localization.Get(result.MissionName);
+
+        string total = ColorUtility.ToHtmlStringRGB(totalColor);
 
         breakdownLabel.text =
-            $"{localization.Get(result.MissionName)}\n\n" +
-            $"{localization.Get("Earned XP")}   {result.EarnedXp}\n" +
-            $"{localization.Get("Extraction bonus")}   {result.ExtractionBonusXp}\n" +
-            $"{localization.Get("Leftover scrap")}   {result.ScrapXp}\n\n" +
-            $"{localization.Get("TOTAL XP")}   {result.TotalXp}";
+            $"{Row(localization.Get("Earned XP"), result.EarnedXp)}\n" +
+            $"{Row(localization.Get("Extraction bonus"), result.ExtractionBonusXp)}\n" +
+            $"{Row(localization.Get("Leftover scrap"), result.ScrapXp)}\n\n" +
+            $"<color=#{total}>{Row(localization.Get("TOTAL XP"), result.TotalXp)}</color>";
 
         UIEvents.SetScreen(ScreenType.MissionResults, true);
+    }
+
+    private static string Row(string label, int value)
+    {
+        return $"{label}<pos=78%>{value}";
     }
 
     public void Retry()

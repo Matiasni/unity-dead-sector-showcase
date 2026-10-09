@@ -1,10 +1,10 @@
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class UITutorialHint : MonoBehaviour
 {
     [SerializeField] private CanvasGroup group;
-    [SerializeField] private Text label;
+    [SerializeField] private TMP_Text label;
     [SerializeField] private float fadeSpeed = 3f;
 
     private float hideTime;
@@ -26,7 +26,7 @@ public class UITutorialHint : MonoBehaviour
 
     private void Show(string hint, float duration)
     {
-        label.text = LocalizationManager.Instance.Get(hint);
+        label.text = KeyGlyphs.Format(LocalizationManager.Instance.Get(hint));
         hideTime = Time.unscaledTime + duration;
     }
 

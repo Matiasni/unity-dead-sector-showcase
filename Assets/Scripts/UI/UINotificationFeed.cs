@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using System.Text;
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class UINotificationFeed : MonoBehaviour
 {
-    [SerializeField] private Text label;
+    [SerializeField] private TMP_Text label;
     [SerializeField] private int maxLines = 5;
     [SerializeField] private float lineDuration = 2.5f;
 
