@@ -41,7 +41,7 @@ public class DamageNumber : PoolableObject
         }
 
         if (viewCamera == null)
-            viewCamera = Camera.main;
+            viewCamera = GameCamera.Current;
 
         transform.position += drift * Time.deltaTime;
 
