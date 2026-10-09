@@ -6,6 +6,7 @@ public class WeaponSettings : ScriptableObject
     [Header("General")]
     public string weaponName;
     [TextArea] public string description;
+    public Sprite icon;
     public WeaponView viewPrefab;
 
     [Header("Firing")]
@@ -17,6 +18,7 @@ public class WeaponSettings : ScriptableObject
     [Header("Ammo")]
     [Tooltip("Resource consumed when shooting (empty = infinite ammo)")]
     public ResourceDefinition ammoType;
+    public Sprite ammoIcon;
     [Min(0)] public int ammoPerShot = 1;
 
     [Header("Magazine")]

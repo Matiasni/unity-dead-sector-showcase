@@ -1,12 +1,11 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class UILanguageSelector : MonoBehaviour
 {
-    [SerializeField] private Button[] buttons;
+    [SerializeField] private StyledButton[] buttons;
     [SerializeField] private string[] languageCodes;
-    [SerializeField] private Color selectedColor = new(1f, 0.85f, 0.35f);
-    [SerializeField] private Color idleColor = new(0.85f, 0.85f, 0.88f);
+    [SerializeField] private ButtonStyle activeStyle;
+    [SerializeField] private ButtonStyle idleStyle;
 
     private void OnEnable()
     {
@@ -30,6 +29,6 @@ public class UILanguageSelector : MonoBehaviour
         string current = LocalizationManager.Instance.CurrentLanguage;
 
         for (int i = 0; i < buttons.Length; i++)
-            buttons[i].GetComponent<Image>().color = languageCodes[i] == current ? selectedColor : idleColor;
+            buttons[i].SetStyle(languageCodes[i] == current ? activeStyle : idleStyle);
     }
 }

@@ -19,11 +19,13 @@ MonoBehaviour:
 
     Weak
     vs swarms, slow fire rate.'
+  icon: {fileID: -1907120089, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
   viewPrefab: {fileID: 8142879566951745258, guid: 6ccd3652ae09fee4d8d72f3bdca48f99, type: 3}
   fireMode: 1
   fireRate: 1.25
   shotPattern: {fileID: 11400000, guid: 0791edabec037cd448227b5c8d01518b, type: 2}
   ammoType: {fileID: 11400000, guid: 3f478891be625ca4f907bfeab752eaa1, type: 2}
+  ammoIcon: {fileID: -67991954, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
   ammoPerShot: 1
   magazineSize: 5
   reloadTime: 1.7

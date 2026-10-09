@@ -17,7 +17,8 @@ MonoBehaviour:
 
     Stick it to a Charger or
     a group.'
-  uiColor: {r: 0.5, g: 0.6, b: 0.2, a: 1}
+  icon: {fileID: 975440626, guid: a2a37b60da34dff45bcc074a104b70d9, type: 3}
+  uiColor: {r: 0.9411765, g: 0.6745098, b: 0.15686275, a: 1}
   cooldown: 1
   costResource: {fileID: 11400000, guid: 0146341386861204b90993c086133dfe, type: 2}
   costAmount: 1
