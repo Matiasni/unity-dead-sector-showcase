@@ -152,6 +152,7 @@
         { "key": "{0} / {1} SELECTED", "value": "{0} / {1} ELEGIDAS" },
         { "key": "REINFORCEMENTS", "value": "REFUERZOS" },
         { "key": "OBJECTIVES", "value": "OBJETIVOS" },
-        { "key": "TIP", "value": "CONSEJO" }
+        { "key": "TIP", "value": "CONSEJO" },
+        { "key": "FULLSCREEN", "value": "PANTALLA COMPLETA" }
     ]
 }

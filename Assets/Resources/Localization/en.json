@@ -152,6 +152,7 @@
         { "key": "{0} / {1} SELECTED", "value": "{0} / {1} SELECTED" },
         { "key": "REINFORCEMENTS", "value": "REINFORCEMENTS" },
         { "key": "OBJECTIVES", "value": "OBJECTIVES" },
-        { "key": "TIP", "value": "TIP" }
+        { "key": "TIP", "value": "TIP" },
+        { "key": "FULLSCREEN", "value": "FULLSCREEN" }
     ]
 }
