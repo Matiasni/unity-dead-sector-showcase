@@ -8,12 +8,15 @@ public class UpgradeSystem : MonoBehaviour
 {
     [SerializeField] private UpgradePool pool;
     [SerializeField, Min(1)] private int optionsPerLevel = 3;
+    [SerializeField, Min(0f)] private float offerDelay = 0.6f;
 
     private readonly Dictionary<UpgradeDefinition, int> stacks = new();
 
     private LevelProgression progression;
     private UpgradeDefinition[] currentOptions;
     private int pendingChoices;
+    private float offerTime;
+    private bool isOfferScheduled;
 
     public IReadOnlyDictionary<UpgradeDefinition, int> Stacks => stacks;
     public bool IsChoosing => currentOptions != null;
@@ -33,7 +36,16 @@ public class UpgradeSystem : MonoBehaviour
     private void OnDisable()
     {
         progression.OnLevelUp -= HandleLevelUp;
+        isOfferScheduled = false;
         GamePause.Release(this);
+    }
+
+    private void Update()
+    {
+        if (!isOfferScheduled || Time.time < offerTime) return;
+
+        isOfferScheduled = false;
+        OfferNext();
     }
 
     public void Choose(UpgradeDefinition upgrade)
@@ -57,8 +69,10 @@ public class UpgradeSystem : MonoBehaviour
     {
         pendingChoices++;
 
-        if (!IsChoosing)
-            OfferNext();
+        if (IsChoosing || isOfferScheduled) return;
+
+        isOfferScheduled = true;
+        offerTime = Time.time + offerDelay;
     }
 
     private void OfferNext()
