@@ -15,6 +15,9 @@ public class ExtractionObjective : Objective, IInteractable
     [SerializeField] private float boardingRadius = 4f;
     [SerializeField] private LayerMask playerMask;
 
+    [Header("Effects")]
+    [SerializeField] private ExtractionBeacon beacon;
+
     private readonly Collider[] boardingBuffer = new Collider[1];
 
     private Phase phase;
@@ -27,6 +30,9 @@ public class ExtractionObjective : Objective, IInteractable
     protected override void OnActivated()
     {
         GameEvents.OnNotification("Extraction available");
+
+        if (beacon != null)
+            beacon.ShowAvailable();
     }
 
     public void Interact(GameObject interactor)
@@ -39,6 +45,9 @@ public class ExtractionObjective : Objective, IInteractable
 
         waveSpawner.Begin(wave, holdoutDuration);
         GameEvents.OnMusicIntensityChanged(1f);
+
+        if (beacon != null)
+            beacon.ShowCalled();
 
         GameEvents.OnNotification("Extraction inbound. Hold the area!");
         NotifyChanged();

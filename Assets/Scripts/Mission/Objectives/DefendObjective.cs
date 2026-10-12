@@ -14,6 +14,9 @@ public class DefendObjective : Objective, IInteractable
     [SerializeField] private WaveSpawner waveSpawner;
     [SerializeField] private WaveDefinition wave;
 
+    [Header("Effects")]
+    [SerializeField] private UplinkEffects effects;
+
     private int idleLayer;
     private float remainingTime;
     private int shownSeconds;
@@ -41,6 +44,9 @@ public class DefendObjective : Objective, IInteractable
         defendTarget.OnDied += HandleTargetDestroyed;
         waveSpawner.Begin(wave, defendDuration);
         GameEvents.OnMusicIntensityChanged(0.7f);
+
+        if (effects != null)
+            effects.ShowActive();
 
         GameEvents.OnNotification("Uplink started. Defend the tower!");
         NotifyChanged();
@@ -71,7 +77,16 @@ public class DefendObjective : Objective, IInteractable
     {
         EndDefense();
         GameEvents.OnNotification("Uplink lost");
+
+        if (effects != null)
+            effects.ShowLost();
         StartCoroutine(ResetTarget());
+    }
+
+    protected override void OnCompleted()
+    {
+        if (effects != null)
+            effects.ShowComplete();
     }
 
     private IEnumerator ResetTarget()

@@ -19,6 +19,7 @@ MonoBehaviour:
   cooldown: 1.5
   costResource: {fileID: 0}
   costAmount: 1
+  activationEffect: {fileID: 485603944069687353, guid: 1ab9d0146d0c1e940b71ce6113f3bff2, type: 3}
   speed: 18
   duration: 0.18
   combatLockDuration: 0.25

@@ -17,6 +17,8 @@ public class RewardDefinition : ScriptableObject
 
     [SerializeField] private RewardEntry[] entries;
 
+    public Color DisplayColor => entries.Length > 0 && entries[0].resource != null ? entries[0].resource.color : Color.white;
+
     public List<ResourceAmount> Roll()
     {
         var results = new List<ResourceAmount>();

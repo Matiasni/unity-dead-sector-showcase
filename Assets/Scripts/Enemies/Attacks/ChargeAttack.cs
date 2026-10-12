@@ -7,6 +7,7 @@ public class ChargeAttack : EnemyAttack<ChargeAttackDefinition>
     private const float CrashThreshold = 0.3f;
 
     private readonly IDamageModifier stunVulnerability;
+    private readonly IChargeFeedback feedback;
 
     private Phase phase;
     private float timer;
@@ -18,6 +19,7 @@ public class ChargeAttack : EnemyAttack<ChargeAttackDefinition>
     public ChargeAttack(ChargeAttackDefinition definition, EnemyContext context) : base(definition, context)
     {
         stunVulnerability = new DamageMultiplier(definition.stunDamageMultiplier);
+        feedback = context.Self.GetComponent<IChargeFeedback>();
     }
 
     public override bool CanStart(Transform target)
@@ -32,6 +34,7 @@ public class ChargeAttack : EnemyAttack<ChargeAttackDefinition>
 
         context.Motor.Stop();
         context.Telegraph?.Show(definition.telegraphColor);
+        feedback?.ShowWindup();
     }
 
     protected override void OnTick(Transform target, float deltaTime)
@@ -62,6 +65,7 @@ public class ChargeAttack : EnemyAttack<ChargeAttackDefinition>
     protected override void OnCancel()
     {
         context.DamageHost?.RemoveDamageModifier(stunVulnerability);
+        feedback?.Stop();
     }
 
     private void StartCharge(Transform target)
@@ -72,6 +76,7 @@ public class ChargeAttack : EnemyAttack<ChargeAttackDefinition>
         hasHitTarget = false;
 
         context.Telegraph?.Hide();
+        feedback?.ShowCharge();
     }
 
     private void UpdateCharge(Transform target, float deltaTime)
@@ -96,6 +101,7 @@ public class ChargeAttack : EnemyAttack<ChargeAttackDefinition>
         hasHitTarget = true;
 
         DealDamage(target, definition.damage);
+        feedback?.ShowImpact(target.position);
 
         target.GetComponentInParent<IKnockbackReceiver>()?.ApplyKnockback(
             chargeDirection * definition.knockbackSpeed,
@@ -110,6 +116,8 @@ public class ChargeAttack : EnemyAttack<ChargeAttackDefinition>
 
         context.DamageHost?.AddDamageModifier(stunVulnerability);
         context.Telegraph?.Show(definition.stunColor);
+        feedback?.Stop();
+        feedback?.ShowImpact(context.Self.position + chargeDirection);
     }
 
     private void EndStun()
@@ -122,5 +130,6 @@ public class ChargeAttack : EnemyAttack<ChargeAttackDefinition>
     {
         phase = Phase.Recovery;
         timer = definition.recoveryTime;
+        feedback?.Stop();
     }
 }

@@ -848,6 +848,8 @@ GameObject:
   - component: {fileID: 3932546601927896231}
   - component: {fileID: 8614901201746584517}
   - component: {fileID: 2884959258374019460}
+  - component: {fileID: 1913691692157720161}
+  - component: {fileID: 2338059981201097302}
   m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
@@ -1235,6 +1237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeSystem
   pool: {fileID: 11400000, guid: 6ce679e4182009141ab85b6ec4e6a913, type: 2}
   optionsPerLevel: 3
+  offerDelay: 0.6
 --- !u!114 &5086773986244036042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1303,6 +1306,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ExperienceCollector
   experienceResource: {fileID: 11400000, guid: bc9777cf7e1de764b80fb5ceab9e3665, type: 2}
+--- !u!114 &1913691692157720161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8173514665303188357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f1554415b1f79f4c9fd732238874d91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DashAfterimages
+  sources:
+  - {fileID: 1535734170582369227}
+  - {fileID: 5231533253854687114}
+  afterimagePrefab: {fileID: 1881390017933793326, guid: b49ce876a3b26c64f8893f269f134bca, type: 3}
+  spawnInterval: 0.035
+--- !u!114 &2338059981201097302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8173514665303188357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1292e5f985495c9409c5f50db484b83d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnEffectOnLevelUp
+  effect: {fileID: 3722776919046943409, guid: 78dd416187603d148bf38f56fea612a7, type: 3}
 --- !u!1 &8570189694890120590
 GameObject:
   m_ObjectHideFlags: 0

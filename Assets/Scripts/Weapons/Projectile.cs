@@ -7,6 +7,8 @@ public class Projectile : PoolableObject
     private static readonly IComparer<RaycastHit> ByDistance = Comparer<RaycastHit>.Create((a, b) => a.distance.CompareTo(b.distance));
 
     [SerializeField] private float radius = 0.1f;
+    [SerializeField] private PooledEffect impactEffect;
+    [SerializeField] private TrailRenderer trail;
 
     private readonly HashSet<IDamageable> damagedTargets = new();
 
@@ -27,6 +29,12 @@ public class Projectile : PoolableObject
         this.damage = damage;
         remainingPierce = pierceCount;
         expireTime = Time.time + lifeTime;
+    }
+
+    public override void OnSpawned()
+    {
+        if (trail != null)
+            trail.Clear();
     }
 
     public override void OnDespawned()
@@ -73,6 +81,7 @@ public class Projectile : PoolableObject
 
         if (damageable == null)
         {
+            SpawnImpact(hit);
             Release();
             return true;
         }
@@ -80,6 +89,7 @@ public class Projectile : PoolableObject
         if (!damagedTargets.Add(damageable)) return false;
 
         damageable.TakeDamage(damage);
+        SpawnImpact(hit);
 
         if (remainingPierce > 0)
         {
@@ -89,6 +99,23 @@ public class Projectile : PoolableObject
 
         Release();
         return true;
+    }
+
+    private void SpawnImpact(RaycastHit hit)
+    {
+        var surface = hit.collider.GetComponentInParent<ImpactSurface>();
+        var effect = surface != null ? surface.ImpactEffect : impactEffect;
+
+        bool startedInside = hit.distance <= 0f && hit.point == Vector3.zero;
+        Vector3 point = startedInside ? transform.position : hit.point;
+        Vector3 normal = startedInside ? -velocity.normalized : hit.normal;
+
+        if (surface != null)
+            surface.NotifyImpact(point);
+
+        if (effect == null) return;
+
+        PoolManager.Spawn(effect, point, Quaternion.LookRotation(normal));
     }
 
     private static int BuildCollisionMask(int layer)

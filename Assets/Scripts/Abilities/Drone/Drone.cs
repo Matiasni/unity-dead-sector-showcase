@@ -4,6 +4,8 @@ using UnityEngine;
 [RequireComponent(typeof(AutoTurret))]
 public class Drone : PoolableObject
 {
+    [SerializeField] private PooledEffect warpEffect;
+
     private AutoTurret turret;
 
     private Transform owner;
@@ -31,6 +33,7 @@ public class Drone : PoolableObject
 
         turret.Configure(definition.weapon, definition.detectionRadius, definition.targetMask, modifiers);
         UpdateOrbit(0f);
+        SpawnWarp();
     }
 
     public override void OnDespawned()
@@ -63,8 +66,15 @@ public class Drone : PoolableObject
         transform.position = owner.position + offset;
     }
 
+    private void SpawnWarp()
+    {
+        if (warpEffect != null)
+            PoolManager.Spawn(warpEffect, transform.position, Quaternion.identity);
+    }
+
     private void Expire()
     {
+        SpawnWarp();
         OnExpired?.Invoke(this);
         Release();
     }

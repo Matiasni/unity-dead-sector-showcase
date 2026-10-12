@@ -15,6 +15,9 @@ public abstract class AbilityDefinition : ScriptableObject
     public ResourceDefinition costResource;
     [Min(0)] public int costAmount = 1;
 
+    [Header("Effects")]
+    public PooledEffect activationEffect;
+
     public bool HasCost => costResource != null && costAmount > 0;
 
     public abstract IAbility CreateAbility(AbilityContext context);

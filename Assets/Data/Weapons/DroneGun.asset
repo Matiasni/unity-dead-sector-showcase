@@ -14,15 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WeaponSettings
   weaponName: Drone Gun
   description: 
+  icon: {fileID: 0}
   viewPrefab: {fileID: 0}
   fireMode: 0
   fireRate: 5
   shotPattern: {fileID: 11400000, guid: 38db919c51c705842ab7e194d688f3a4, type: 2}
   ammoType: {fileID: 0}
+  ammoIcon: {fileID: 0}
   ammoPerShot: 1
   magazineSize: 0
   reloadTime: 1.5
-  projectilePrefab: {fileID: 4171255174875198597, guid: 3a6b8cf7027a9fe41bb29d9f8c0d712a, type: 3}
+  projectilePrefab: {fileID: 8252211658683447836, guid: d63b6d63595dd7f4fb86f72080bfaf3a, type: 3}
+  muzzleFlash: {fileID: 5121375354809980159, guid: 63e38216171893a438a379f272090918, type: 3}
   projectileSpeed: 30
   projectileLifeTime: 0.8
   damage: 5

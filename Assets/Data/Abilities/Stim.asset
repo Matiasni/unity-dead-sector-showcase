@@ -19,5 +19,6 @@ MonoBehaviour:
   cooldown: 1
   costResource: {fileID: 11400000, guid: d5cc9b9ac2dc9354795a11695ef888a7, type: 2}
   costAmount: 1
+  activationEffect: {fileID: 7975819978165567745, guid: b307e4a426f2ec1438c560353f3229c6, type: 3}
   healAmount: 60
   healDuration: 3

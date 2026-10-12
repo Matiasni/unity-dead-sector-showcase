@@ -39,6 +39,7 @@ public abstract class Ability<TDefinition> : IAbility where TDefinition : Abilit
             return false;
 
         Activate();
+        SpawnActivationEffect();
 
         if (availableUses == MaxUses)
             rechargeRemaining = Cooldown;
@@ -70,4 +71,10 @@ public abstract class Ability<TDefinition> : IAbility where TDefinition : Abilit
     public virtual void Dispose() { }
 
     protected abstract void Activate();
+
+    private void SpawnActivationEffect()
+    {
+        if (definition.activationEffect != null)
+            PoolManager.Spawn(definition.activationEffect, context.Owner.transform);
+    }
 }

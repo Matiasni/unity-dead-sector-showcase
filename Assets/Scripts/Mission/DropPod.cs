@@ -18,6 +18,8 @@ public class DropPod : PoolableObject
     [Header("Feedback")]
     [SerializeField] private SoundEffect landSound;
     [SerializeField, Range(0f, 1f)] private float landShake = 0.6f;
+    [SerializeField] private ParticleSystem[] trailSystems;
+    [SerializeField] private PooledEffect impactEffect;
 
     private readonly HashSet<IDamageable> damagedTargets = new();
 
@@ -31,6 +33,12 @@ public class DropPod : PoolableObject
         elapsed = 0f;
         hasLanded = false;
         UpdateVisual(0f);
+
+        foreach (var trail in trailSystems)
+        {
+            trail.Clear(false);
+            trail.Play(false);
+        }
     }
 
     private void Update()
@@ -58,6 +66,12 @@ public class DropPod : PoolableObject
 
         SoundPlayer.Play(landSound, transform.position);
         GameEvents.OnCameraShake(landShake);
+
+        foreach (var trail in trailSystems)
+            trail.Stop(false, ParticleSystemStopBehavior.StopEmitting);
+
+        if (impactEffect != null)
+            PoolManager.Spawn(impactEffect, transform.position, Quaternion.identity);
 
         int count = Physics.OverlapSphereNonAlloc(transform.position, impactRadius, impactBuffer, impactMask, QueryTriggerInteraction.Ignore);
 

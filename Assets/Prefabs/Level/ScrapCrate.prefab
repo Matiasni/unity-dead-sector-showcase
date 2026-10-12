@@ -108,6 +108,8 @@ GameObject:
   - component: {fileID: 6877465168708718195}
   - component: {fileID: 8909478723118227439}
   - component: {fileID: 1463656639311449399}
+  - component: {fileID: 8127245912715269370}
+  - component: {fileID: 3680524756398771714}
   m_Layer: 12
   m_Name: ScrapCrate
   m_TagString: Untagged
@@ -299,3 +301,34 @@ MonoBehaviour:
   numberScale: 0.18
   hitSound: {fileID: 11400000, guid: 07bb20b7b4dba704a88f96ba9f9d7e48, type: 2}
   deathSound: {fileID: 11400000, guid: 5d4f545f68312df43aab6370fd1b4e3e, type: 2}
+--- !u!114 &8127245912715269370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7971678633434792966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91535630a3e634246837bbd5cbec7390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ImpactSurface
+  impactEffect: {fileID: 1160031181933289564, guid: d0543247b25e1304da88facdc666cb02, type: 3}
+--- !u!114 &3680524756398771714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7971678633434792966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2778c43bbc0e7df4f9d328ca415ac301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnEffectOnDeath
+  effect: {fileID: 186856313382281317, guid: 7c25f76dad7ed4c449834c62d0d4e2c9, type: 3}
+  remainsEffect: {fileID: 0}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 1
+  groundSearchDistance: 4

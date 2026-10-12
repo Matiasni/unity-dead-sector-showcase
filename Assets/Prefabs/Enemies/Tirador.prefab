@@ -141,6 +141,8 @@ GameObject:
   - component: {fileID: 4860407434431742727}
   - component: {fileID: 6673938706012585684}
   - component: {fileID: 1662275218200312799}
+  - component: {fileID: 7873452260899825035}
+  - component: {fileID: 5322819511505392641}
   m_Layer: 10
   m_Name: Tirador
   m_TagString: Untagged
@@ -341,6 +343,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ExperienceOnDeath
   experience: 10
+--- !u!114 &7873452260899825035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763852471317174010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91535630a3e634246837bbd5cbec7390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ImpactSurface
+  impactEffect: {fileID: 505901220640359596, guid: 2c70da5a40670ff44997687a2f560767, type: 3}
+--- !u!114 &5322819511505392641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763852471317174010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2778c43bbc0e7df4f9d328ca415ac301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnEffectOnDeath
+  effect: {fileID: 6628143626527517617, guid: 932efb71a07db4a4b8ad670ad8e90fd0, type: 3}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 1
+  groundSearchDistance: 4
 --- !u!1 &2514945436216520755
 GameObject:
   m_ObjectHideFlags: 0

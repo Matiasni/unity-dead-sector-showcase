@@ -5,6 +5,8 @@ public class ExtractionShip : MonoBehaviour
     [SerializeField] private Transform visual;
     [SerializeField] private float approachHeight = 40f;
     [SerializeField] private float landDuration = 4f;
+    [SerializeField] private ParticleSystem[] engineSystems;
+    [SerializeField] private ParticleSystem[] landingSystems;
 
     private Vector3 landedLocalPosition;
     private float elapsed;
@@ -26,6 +28,12 @@ public class ExtractionShip : MonoBehaviour
 
         visual.gameObject.SetActive(true);
         UpdateVisual(0f);
+
+        foreach (var system in engineSystems)
+            system.Play(false);
+
+        foreach (var system in landingSystems)
+            system.Play(false);
     }
 
     private void Update()
@@ -41,6 +49,9 @@ public class ExtractionShip : MonoBehaviour
 
         isLanding = false;
         IsLanded = true;
+
+        foreach (var system in landingSystems)
+            system.Stop(false, ParticleSystemStopBehavior.StopEmitting);
     }
 
     private void UpdateVisual(float t)

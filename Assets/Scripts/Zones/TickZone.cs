@@ -5,6 +5,7 @@ using UnityEngine;
 public abstract class TickZone<T> : MonoBehaviour where T : class
 {
     [SerializeField] private float tickInterval = 0.5f;
+    [SerializeField] private PooledEffect tickEffect;
 
     private readonly HashSet<T> targets = new();
     private float nextTickTime;
@@ -39,7 +40,16 @@ public abstract class TickZone<T> : MonoBehaviour where T : class
         targets.RemoveWhere(IsUnavailable);
 
         foreach (var target in targets)
+        {
             Apply(target);
+            SpawnTickEffect(target);
+        }
+    }
+
+    private void SpawnTickEffect(T target)
+    {
+        if (tickEffect != null && target is Component component)
+            PoolManager.Spawn(tickEffect, component.transform.position, Quaternion.identity);
     }
 
     private static bool IsUnavailable(T target) => target is Behaviour behaviour && (behaviour == null || !behaviour.isActiveAndEnabled);
