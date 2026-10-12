@@ -29,7 +29,8 @@ MonoBehaviour:
   ammoPerShot: 1
   magazineSize: 5
   reloadTime: 1.7
-  projectilePrefab: {fileID: 4171255174875198597, guid: 3a6b8cf7027a9fe41bb29d9f8c0d712a, type: 3}
+  projectilePrefab: {fileID: 8008266027655013894, guid: 0b3ca370c31ef7f4fbf09a8a7172c3c0, type: 3}
+  muzzleFlash: {fileID: 6281386754950511241, guid: dfee6383498bda848b85a4add5a5ee62, type: 3}
   projectileSpeed: 80
   projectileLifeTime: 1.5
   damage: 60

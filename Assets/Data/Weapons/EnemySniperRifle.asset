@@ -14,15 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WeaponSettings
   weaponName: Tirador Rifle
   description: 
+  icon: {fileID: 0}
   viewPrefab: {fileID: 0}
   fireMode: 1
   fireRate: 1
   shotPattern: {fileID: 11400000, guid: 0791edabec037cd448227b5c8d01518b, type: 2}
   ammoType: {fileID: 0}
+  ammoIcon: {fileID: 0}
   ammoPerShot: 1
   magazineSize: 0
   reloadTime: 1.5
   projectilePrefab: {fileID: 5846413376432574, guid: c8cbfefd02d589a499d8153190c28c72, type: 3}
+  muzzleFlash: {fileID: 4487995629892695680, guid: 5dd9c2a3e13e99442b0a4598395d97f0, type: 3}
   projectileSpeed: 45
   projectileLifeTime: 1.5
   damage: 28

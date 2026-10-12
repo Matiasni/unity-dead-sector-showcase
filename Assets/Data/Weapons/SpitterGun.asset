@@ -14,15 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WeaponSettings
   weaponName: Spitter Gun
   description: 
+  icon: {fileID: 0}
   viewPrefab: {fileID: 0}
   fireMode: 0
   fireRate: 5
   shotPattern: {fileID: 11400000, guid: 05930f366a8780c4eb670da02633cd86, type: 2}
   ammoType: {fileID: 0}
+  ammoIcon: {fileID: 0}
   ammoPerShot: 1
   magazineSize: 0
   reloadTime: 1.5
-  projectilePrefab: {fileID: 5846413376432574, guid: c8cbfefd02d589a499d8153190c28c72, type: 3}
+  projectilePrefab: {fileID: 3401819459642967135, guid: 883517715f803b644943a7d8d64d5fe6, type: 3}
+  muzzleFlash: {fileID: 6741805478476328596, guid: e15b7fa4fb9ed374ab2a2d17f6967c81, type: 3}
   projectileSpeed: 18
   projectileLifeTime: 2
   damage: 5

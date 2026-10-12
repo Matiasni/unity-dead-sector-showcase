@@ -28,6 +28,7 @@ public class WeaponSettings : ScriptableObject
 
     [Header("Projectile")]
     public Projectile projectilePrefab;
+    public PooledEffect muzzleFlash;
     public float projectileSpeed = 20f;
     public float projectileLifeTime = 2f;
     [Tooltip("Damage per projectile")]

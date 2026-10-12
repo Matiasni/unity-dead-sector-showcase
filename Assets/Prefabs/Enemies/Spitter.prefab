@@ -200,6 +200,8 @@ GameObject:
   - component: {fileID: 3975249220799103596}
   - component: {fileID: 4570035864510911451}
   - component: {fileID: 1730396699995641664}
+  - component: {fileID: 782058654685555646}
+  - component: {fileID: 8938753910615741741}
   m_Layer: 10
   m_Name: Spitter
   m_TagString: Untagged
@@ -399,6 +401,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ExperienceOnDeath
   experience: 10
+--- !u!114 &782058654685555646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4028765471338876198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91535630a3e634246837bbd5cbec7390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ImpactSurface
+  impactEffect: {fileID: 2136354108563296578, guid: 515d94e176b75334fa86961fa59c3a8a, type: 3}
+--- !u!114 &8938753910615741741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4028765471338876198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2778c43bbc0e7df4f9d328ca415ac301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnEffectOnDeath
+  effect: {fileID: 4238905056903367489, guid: ac58c77501852d445ba464fffaa88c7a, type: 3}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 1
+  groundSearchDistance: 4
 --- !u!1 &4829617983290053431
 GameObject:
   m_ObjectHideFlags: 0

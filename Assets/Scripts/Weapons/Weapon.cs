@@ -149,6 +149,9 @@ public class Weapon
         SoundPlayer.Play(settings.fireSound, muzzle.position);
         OnFired?.Invoke(settings);
 
+        if (settings.muzzleFlash != null)
+            PoolManager.Spawn(settings.muzzleFlash, muzzle.position, muzzle.rotation);
+
         shotDirections.Clear();
         settings.shotPattern.GetDirections(muzzle.forward, shotDirections);
 
