@@ -3,18 +3,29 @@ using UnityEngine;
 [RequireComponent(typeof(ForceShield))]
 public class ForceShieldView : MonoBehaviour
 {
-    private static readonly int BaseColorId = Shader.PropertyToID("_BaseColor");
+    private const int MaxRipples = 4;
+
+    private static readonly int ColorId = Shader.PropertyToID("_Color");
+    private static readonly int FlashId = Shader.PropertyToID("_Flash");
+    private static readonly int HitsId = Shader.PropertyToID("_Hits");
 
     [SerializeField] private Renderer shieldRenderer;
-    [SerializeField] private Color fullColor = new(0.3f, 0.8f, 1f, 0.25f);
-    [SerializeField] private Color depletedColor = new(1f, 0.25f, 0.2f, 0.35f);
-    [SerializeField] private Color hitColor = new(1f, 1f, 1f, 0.55f);
-    [SerializeField] private float hitFlashDuration = 0.08f;
+    [SerializeField] private ImpactSurface impactSurface;
+    [SerializeField] private Color fullColor = new(0.35f, 0.8f, 1f, 1f);
+    [SerializeField] private Color depletedColor = new(1f, 0.3f, 0.22f, 1f);
     [SerializeField, Range(0f, 1f)] private float lowThreshold = 0.3f;
+    [SerializeField] private float flashDecay = 6f;
+
+    [Header("Effects")]
+    [SerializeField] private PooledEffect shatterEffect;
+    [SerializeField] private PooledEffect fadeEffect;
+
+    private readonly Vector4[] ripples = new Vector4[MaxRipples];
 
     private ForceShield shield;
     private MaterialPropertyBlock propertyBlock;
-    private float hitFlashEndTime;
+    private float flash;
+    private int nextRipple;
 
     private void Awake()
     {
@@ -25,16 +36,31 @@ public class ForceShieldView : MonoBehaviour
     private void OnEnable()
     {
         shield.OnHit += Flash;
+        shield.OnCollapsed += SpawnCollapseEffect;
+        impactSurface.OnImpact += AddRipple;
+
+        flash = 1f;
+
+        for (int i = 0; i < MaxRipples; i++)
+            ripples[i] = new Vector4(0f, 0f, 0f, -100f);
     }
 
     private void OnDisable()
     {
         shield.OnHit -= Flash;
+        shield.OnCollapsed -= SpawnCollapseEffect;
+        impactSurface.OnImpact -= AddRipple;
     }
 
     private void LateUpdate()
     {
-        SetColor(Time.time < hitFlashEndTime ? hitColor : GetDurabilityColor());
+        flash = Mathf.MoveTowards(flash, 0f, flashDecay * Time.deltaTime);
+
+        shieldRenderer.GetPropertyBlock(propertyBlock);
+        propertyBlock.SetColor(ColorId, GetDurabilityColor());
+        propertyBlock.SetFloat(FlashId, flash);
+        propertyBlock.SetVectorArray(HitsId, ripples);
+        shieldRenderer.SetPropertyBlock(propertyBlock);
     }
 
     private Color GetDurabilityColor()
@@ -43,20 +69,29 @@ public class ForceShieldView : MonoBehaviour
         Color color = Color.Lerp(depletedColor, fullColor, durability);
 
         if (durability <= lowThreshold)
-            color.a *= 0.5f + 0.5f * Mathf.Abs(Mathf.Sin(Time.time * 12f));
+            color.a *= 0.45f + 0.55f * Mathf.Abs(Mathf.Sin(Time.time * 14f));
 
         return color;
     }
 
     private void Flash()
     {
-        hitFlashEndTime = Time.time + hitFlashDuration;
+        flash = 1f;
     }
 
-    private void SetColor(Color color)
+    private void AddRipple(Vector3 point)
     {
-        shieldRenderer.GetPropertyBlock(propertyBlock);
-        propertyBlock.SetColor(BaseColorId, color);
-        shieldRenderer.SetPropertyBlock(propertyBlock);
+        ripples[nextRipple] = new Vector4(point.x, point.y, point.z, Time.timeSinceLevelLoad);
+        nextRipple = (nextRipple + 1) % MaxRipples;
+    }
+
+    private void SpawnCollapseEffect(ForceShield collapsed)
+    {
+        var effect = collapsed.DurabilityNormalized <= 0f ? shatterEffect : fadeEffect;
+
+        if (effect == null) return;
+
+        var spawned = PoolManager.Spawn(effect, transform.position, Quaternion.identity);
+        spawned.SetScale(transform.lossyScale.x * 0.5f);
     }
 }
