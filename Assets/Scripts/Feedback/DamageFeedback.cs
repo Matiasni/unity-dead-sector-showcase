@@ -6,7 +6,7 @@ public class DamageFeedback : MonoBehaviour
     [SerializeField] private DamageNumber numberPrefab;
     [SerializeField] private Color numberColor = Color.white;
     [SerializeField] private float numberHeight = 2.2f;
-    [SerializeField] private float numberScale = 0.18f;
+    [SerializeField] private float numberScale = 0.36f;
     [SerializeField] private SoundEffect hitSound;
     [SerializeField] private SoundEffect deathSound;
 

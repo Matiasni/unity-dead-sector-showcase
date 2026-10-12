@@ -298,7 +298,7 @@ MonoBehaviour:
   numberPrefab: {fileID: 1548952855143166978, guid: 4d8a2125911b5a84fa8a47c28f2351d6, type: 3}
   numberColor: {r: 1, g: 1, b: 1, a: 1}
   numberHeight: 2.2
-  numberScale: 0.18
+  numberScale: 0.36
   hitSound: {fileID: 11400000, guid: 07bb20b7b4dba704a88f96ba9f9d7e48, type: 2}
   deathSound: {fileID: 11400000, guid: 5d4f545f68312df43aab6370fd1b4e3e, type: 2}
 --- !u!114 &8127245912715269370
